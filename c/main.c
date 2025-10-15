@@ -1,20 +1,20 @@
-/* ****************************************************************************************/
+/* ******************************************************************/
 /* Author:           Luiz Otávio Mendes de Oliveira
 /* Creation date:    15out2025
 /* To exec:          make
 /* ******************************************************************/
 
-#include <stdio.h> // printf, puts, scanf
-#include <stdlib.h>
-#include <assert.h>
-#include <limits.h>
-#include <math.h>
-#include <stdbool.h>
-#include <stddef.h>
-#include <stdint.h>
-#include <string.h>
-#include "io.h"
-#include "solution.h"
+#include <stdio.h>     // I/O padrão: printf, puts, scanf (saída formatada)
+#include <stdlib.h>    // utilidades gerais: malloc/free, strtol, exit
+#include <assert.h>    // assert para verificações em tempo de desenvolvimento (não usado aqui)
+#include <limits.h>    // limites de tipos inteiros (ex.: INT_MAX) (não usado aqui)
+#include <math.h>      // funções matemáticas (ex.: pow, sqrt) (não usado aqui)
+#include <stdbool.h>   // tipo bool, valores true/false
+#include <stddef.h>    // definições básicas (ex.: size_t, NULL)
+#include <stdint.h>    // inteiros de largura fixa (ex.: uint32_t) (não usado aqui)
+#include <string.h>    // manipulação de strings (ex.: strtok/strlen), usada nos helpers
+#include "io.h"        // helpers de entrada: readline, split_string, free_split
+#include "solution.h"  // assinatura da função solution()
 
 int main()
 {
