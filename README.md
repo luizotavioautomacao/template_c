@@ -1,6 +1,7 @@
 # template_c
 ## [Estrutura simples](./c/README.md)
 ## [Estrutura SOLID](./c-solid/README.md)
+## [Desafios](./challenges)
 
 #### Printf  
 | Especificador | Tipo esperado                                    | Exemplo de uso                             | Saída                  |
