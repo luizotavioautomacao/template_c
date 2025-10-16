@@ -4,9 +4,9 @@
 
 int repeatString(char *str)
 {
-    int i, len = strlen(str); // retorna size_t
-    int freq[256] = {0};
-    for (i = 0; i < len; i++)
+    int i, length = strlen(str); // retorna size_t
+    unsigned char freq[256] = {0}; // int freq[256] = {0}; 
+    for (i = 0; i < length; i++)
     {
         unsigned char c = str[i];
         if (freq[c] > 0)
@@ -21,12 +21,12 @@ int repeatString(char *str)
 int main()
 {
     char *txt = NULL;
-    size_t length = 0; // valor dinâmico do tamanho do buffer da função getline
+    size_t buffer = 0; // valor dinâmico do tamanho do buffer da função getline
     printf("Digite a frase: ");
-    getline(&txt, &length, stdin);  // lê conteúdo digitado pelo usuário
+    getline(&txt, &buffer, stdin);  // lê conteúdo digitado pelo usuário
     txt[strcspn(txt, "\n")] = '\0'; // transforma o primeiro caractére \n em \0
     if(repeatString(txt)) printf("A string possui caracteres repetidos! \n");
-    else printf("A string não possui caracteres repetidos! \n");
+    else printf("A string NÃO possui caracteres repetidos! \n");
     free(txt);
     return 0;
 }
