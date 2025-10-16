@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 
 int isAnagram(char *str_1, char *str_2)
 {
@@ -9,6 +10,12 @@ int isAnagram(char *str_1, char *str_2)
 
     if (length_1 != length_2)
         return 0;
+
+    for (int i = 0; i < str_1[i]; i++)
+    {
+        str_1[i] = tolower((unsigned char)str_1[i]);
+        str_2[i] = tolower((unsigned char)str_2[i]);
+    }
 
     int freq[256] = {0};
 
